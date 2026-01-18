@@ -1,1 +1,44 @@
+/* Shared Styles */ 
+.display-flex{
+    display: flex;
+}
+.text-white{
+    color: #FFFFFF;
+}
+.btn{
+    border-radius: 10000px;
+    padding: 12.5px 16px;
+    background: linear-gradient(to right, rgba(251, 9, 180, 1));
+}
+/* Navbar related styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #412567;
+    padding:0 20px
+}
+.nav-links{
+    gap: 20px;
+}
+.nav-items{
+    list-style: none;
+}
+.nav-items a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#Tech{
+    font-weight: 700;
+    font-size: 24px;
+}
+#Wave{
+    font-weight: 700;
+    color: rgba(251, 9, 180, 1);
+    font-size: 24px;
+}
+@media query and (max-width: 576px) {
+    
+}
 
