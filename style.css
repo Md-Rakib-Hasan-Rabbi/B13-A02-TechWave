@@ -1,4 +1,14 @@
 /* Shared Styles */ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: #1A0B2E;
+}
 .display-flex{
     display: flex;
 }
@@ -8,7 +18,6 @@
 .btn{
     border-radius: 10000px;
     padding: 12.5px 16px;
-    background: linear-gradient(to right, rgba(251, 9, 180, 1));
 }
 /* Navbar related styles */
 .navbar{
@@ -16,8 +25,8 @@
     align-items: center;
     max-width: 1440px;
     margin: 0 auto;
-    background-color: #412567;
-    padding:0 20px
+    background-color: #1A0B2E;
+    padding:0 20px;
 }
 .nav-links{
     gap: 20px;
@@ -38,6 +47,35 @@
     color: rgba(251, 9, 180, 1);
     font-size: 24px;
 }
+/* Banner related styles */
+.banner{
+    background-color: #1A0B2E;
+    background-image:url(./assets/microphone.png), url(./assets/hero-circle.png), url(./assets/hero-bg.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center 25%, center 15%, center;
+    background-size: 100px, 315px, cover;
+    height: 650px;
+    margin: 0;
+    padding-top: 20px;
+}
+.hero-badge{
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+.hero-badge-content{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top:0;
+}
+.hero-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 330px;
+}
+
 @media query and (max-width: 576px) {
     
 }
