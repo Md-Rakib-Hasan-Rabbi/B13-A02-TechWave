@@ -76,7 +76,43 @@ body{
     align-items: center;
     padding: 330px;
 }
-
+/* About section styles */
+.about{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.about-content-section{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 40px;
+}
+.about-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.about-content{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.about-stats{
+    justify-content: center;
+    gap: 100px;
+    margin: 120px 200px;
+}
+#stats{
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 700;
+}
+#second-stats{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    white-space:nowrap;
+}
+/* Responsive Styles  */
 @media screen and (max-width: 576px) {
     .nav-links,.btn-primary{
     display: none;
