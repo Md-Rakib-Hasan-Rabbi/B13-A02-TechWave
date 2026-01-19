@@ -27,6 +27,7 @@ body{
     margin: 0 auto;
     background-color: #1A0B2E;
     padding:0 20px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
 }
 .nav-links{
     gap: 20px;
@@ -40,12 +41,12 @@ body{
 }
 #Tech{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 #Wave{
     font-weight: 700;
     color: rgba(251, 9, 180, 1);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 /* Banner related styles */
 .banner{
@@ -60,12 +61,12 @@ body{
 }
 .hero-badge{
     font-weight: 800;
-    font-size: 60px;
+    font-size: 5rem;
     margin-bottom: 0;
 }
 .hero-badge-content{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     margin-top:0;
 }
 .hero-content{
@@ -76,7 +77,25 @@ body{
     padding: 330px;
 }
 
-@media query and (max-width: 576px) {
-    
+@media screen and (max-width: 576px) {
+    .nav-links,.btn-primary{
+    display: none;
 }
+.navbar{
+    background-image: url(./assets/hamburger-menu.png);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+
+}
+.banner{
+    width: 100%;
+    background-size: 100px, 200px, cover;
+
+}
+.hero-badge{
+    width: 100%;
+    max-width: 200px;
+}
+}
+
 
