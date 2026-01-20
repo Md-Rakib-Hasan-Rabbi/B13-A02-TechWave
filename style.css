@@ -21,10 +21,32 @@ body{
 .text-medium-white{
     color: rgba(255, 255, 255, 0.8);
 }
-.btn{
-    border-radius: 10000px;
+.btn-primary,.btn-secondary,.btn-tertiary{
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    gap: 10px;
+    transition:transform 1s;
     padding: 12.5px 16px;
+    color: #FFFFFF;
+    border-radius: 1000px;
+    border: none;
 }
+.btn-primary,.btn-secondary{
+    background: linear-gradient(90deg, #ffe259 0%, #ffa751 50%, #e94dff 100%);
+}
+
+.btn-primary:hover,.btn-secondary:hover,.btn-tertiary:hover{
+    transform: rotate(15deg);
+}
+.btn-tertiary{
+    border: 1px solid #00FF88;
+    color: #00FF88;
+    background-color: transparent;
+}
+
+
 
 /* Navbar related styles */
 .navbar{
@@ -58,10 +80,10 @@ body{
 /* Banner related styles */
 .banner{
     background-color: #1A0B2E;
-    background-image:url(./assets/microphone.png), url(./assets/hero-circle.png), url(./assets/hero-bg.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center 25%, center 15%, center;
-    background-size: 100px, 315px, cover;
+    background-image:url(./assets/new.png),url(./assets/microphone.png), url(./assets/hero-circle.png), url(./assets/hero-bg.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position:calc(50% + 100px), center 25%, center 15%, center;
+    background-size: 90px, 100px, 315px, cover;
     height: 650px;
     margin: 0;
     padding-top: 20px;
@@ -269,12 +291,20 @@ body{
     gap: 40px;
     margin-top: 0px;
 }
+.footer-social-links{
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .footer-copyright{
     text-align: center;
     margin-top: 20px;
     font-size: 1rem;
     font-weight: 400;
 }
+
 /* Responsive Styles  */
 @media screen and (max-width: 576px) {
     .nav-links,.btn-primary{
@@ -286,15 +316,124 @@ body{
     background-position: right 20px center;
 
 }
-.banner{
+ .banner {
+    height: auto;
+    background-size: 48px, 60px, 180px, cover;
+    background-position:center 20%, center 27%, center 25%, center;
+  }
+  .hero-content {
+    padding: 300px 0px;
+    margin-bottom: 32px;
+  }
+  .hero-badge {
+    font-size: 2rem;
+    max-width: 100px;
+    padding-right: 50px;
+  }
+  .about{
     width: 100%;
-    background-size: 100px, 200px, cover;
-
-}
-.hero-badge{
+  }
+  .about-heading{
+    font-size: 2rem;
+  }
+  .about-content{
+    font-size: 1rem;
+  }
+  .about-stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 24px 0px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-choose{
     width: 100%;
-    max-width: 200px;
+    padding: 24px 10px;
+  }
+  .section-heading{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0;
+}
+#card-heading{
+    font-size: 1.2rem;
+}
+#card-content{
+    font-size: 0.9rem;
+}
+.video-container{
+    flex-direction: column;
+    margin: 0;
+    align-items: center; 
+}
+.featured-heading{
+    font-size: 2rem;
+}
+.card-title{
+    font-size: 1rem;
+}
+.card-description{
+    font-size: 0.8rem;
+}
+.class-duration{
+    font-size: 0.9rem;
+}
+.host-heading{
+    font-size: 2rem;
+}
+.host-image img{
+    width: 150px;
+    height: 150px;
+}
+.host-intro{
+    flex-direction: column;
+    margin: 24px 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.host-description{
+    margin: 0px;
+    align-items: center;
+
+}
+.footer {
+    height: auto;
+    min-height: 220px; 
+    background-size: cover;
+    background-position: center;
+}
+.footer-heading {
+    font-size: 1.8rem;
+    padding-top: 0;
+    margin-bottom: 18px;
+}
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+  .footer-links > * {
+    font-size:1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.footer-social-links {
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+.footer-copyright {
+    font-size: 0.75rem;
 }
 }
-
-
