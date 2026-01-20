@@ -15,10 +15,17 @@ body{
 .text-white{
     color: #FFFFFF;
 }
+.text-light-white{
+    color:rgba(255,255,255,0.6);
+}
+.text-medium-white{
+    color: rgba(255, 255, 255, 0.8);
+}
 .btn{
     border-radius: 10000px;
     padding: 12.5px 16px;
 }
+
 /* Navbar related styles */
 .navbar{
     justify-content: space-between;
@@ -116,7 +123,7 @@ body{
 /* Why chose section styles */
 .why-choose{
     background-color: #230E3D;
-    padding-bottom: 120px;
+    padding-bottom: 100px;
 }
 .section-heading{
     text-align: center;
@@ -237,6 +244,36 @@ body{
     width: 20px;
     height: 20px;
     margin: 10px;
+}
+/* Footer related styles */
+.footer{
+    background-image: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 412px;
+    background-position: center;
+}
+.footer-heading{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    padding-top: 120px;
+    margin-bottom: 10px;
+}
+#footer-wave{
+    font-weight: 700;
+    color: rgba(251, 9, 180, 1);
+}
+.footer-links{
+    justify-content: center;
+    gap: 40px;
+    margin-top: 0px;
+}
+.footer-copyright{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 400;
 }
 /* Responsive Styles  */
 @media screen and (max-width: 576px) {
