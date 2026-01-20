@@ -169,6 +169,35 @@ body{
     font-weight: 400;
     line-height: 1.5;
 }
+/*Featured Episodes section styles */
+.featured-episodes{
+    margin-top: 120px;
+}
+.featured-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}   
+.video-card{
+    max-width: 350px;
+    gap: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #250D44;
+}
+.video-information{
+    padding: 12px 24px;
+}
+.class-duration{
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 600;
+}
 /* Responsive Styles  */
 @media screen and (max-width: 576px) {
     .nav-links,.btn-primary{
