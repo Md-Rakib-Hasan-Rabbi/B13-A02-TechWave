@@ -179,7 +179,6 @@ body{
     font-weight: bold;
 }
 .video-container{
-    display: flex;
     justify-content: center;
     gap:30px;
 }   
@@ -197,6 +196,47 @@ body{
     color: #00FF88;
     font-size: 1rem;
     font-weight: 600;
+}
+/* Host section styles */
+.host-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+.host-intro{
+    margin: 30px 200px;
+    background-color: #230E3D;
+    border-radius: 40px;
+}
+.host-image{
+    margin: 35px;
+}
+#host-name{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.host-description{
+    margin: 0px 10px;
+    flex-direction: column;
+}
+.social-links{
+    gap: 14px;
+}
+.link{
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.link img{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
 }
 /* Responsive Styles  */
 @media screen and (max-width: 576px) {
