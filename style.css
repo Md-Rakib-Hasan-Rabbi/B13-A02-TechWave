@@ -82,7 +82,7 @@ body{
     background-color: #1A0B2E;
     background-image:url(./assets/new.png),url(./assets/microphone.png), url(./assets/hero-circle.png), url(./assets/hero-bg.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position:calc(50% + 100px), center 25%, center 15%, center;
+    background-position:center 5%, center 25%, center 15%, center;
     background-size: 90px, 100px, 315px, cover;
     height: 650px;
     margin: 0;
@@ -316,48 +316,48 @@ body{
     background-position: right 20px center;
 
 }
- .banner {
+.banner {
     height: auto;
     background-size: 48px, 60px, 180px, cover;
     background-position:center 20%, center 27%, center 25%, center;
-  }
-  .hero-content {
+}
+.hero-content {
     padding: 300px 0px;
     margin-bottom: 32px;
-  }
-  .hero-badge {
+}
+.hero-badge {
     font-size: 2rem;
     max-width: 100px;
     padding-right: 50px;
-  }
-  .about{
+}
+.about{
     width: 100%;
-  }
-  .about-heading{
+}
+.about-heading{
     font-size: 2rem;
-  }
-  .about-content{
+}
+.about-content{
     font-size: 1rem;
-  }
-  .about-stats{
+}
+.about-stats{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 24px 0px;
     gap: 20px;
     justify-content: center;
     align-items: center;
-  }
-  .why-choose{
+}
+.why-choose{
     width: 100%;
     padding: 24px 10px;
-  }
-  .section-heading{
+}
+.section-heading{
     text-align: center;
     font-size: 1.7rem;
     font-weight: bold;
     padding-top: 20px;
 }
-  .card-container{
+.card-container{
     display: flex;
     flex-direction: column;
     align-items: center; 
